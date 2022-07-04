@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     function card (numType, url) {
+        // consume the api based on the specific pokemon, assign the name and url of the pokemon image and put it in its corresponding type
         fetch(url)
             .then(res => res.json())
             .then(poke => {
@@ -17,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function types(numType) {
+        // choose a random type of pokemon (1-18), place the data on the interface, and insert 6 pokemon in each type
         var type = Math.round(Math.random() * (18 - 1) + 1);
 
         fetch(`https://pokeapi.co/api/v2/type/${type}`)
