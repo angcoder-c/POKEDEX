@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 var pokecard =
                 `<div class="card">
                     <img src="${img}" alt="${name}">
-                    <h5>${name.charAt(0).toUpperCase() + name.slice()}</h5>
+                    <h5>${name.charAt(0).toUpperCase() + name.slice(2)}</h5>
                 </div>`;
                 document.getElementsByClassName('content-cards')[numType].innerHTML += pokecard;
             });
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     card(numType, url);
                 }
                 var typeName = poketype['name'];
-                document.getElementsByClassName('title')[numType].textContent = typeName.charAt(0).toUpperCase() + typeName.slice();
+                document.getElementsByClassName('title')[numType].textContent = typeName.charAt(0).toUpperCase() + typeName.slice(2);
             });
     }
 
