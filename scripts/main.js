@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
             .then(function (poke) {
             var name = poke['name'];
             var img = poke['sprites']['other']['home']['front_default'];
-            var pokecard = "<div class=\"card\">\n                    <img src=\"".concat(img, "\" alt=\"").concat(name, "\">\n                    <h5>").concat(name.charAt(0).toUpperCase() + name.slice(), "</h5>\n                </div>");
+            var pokecard = "<div class=\"card\">\n                    <img src=\"".concat(img, "\" alt=\"").concat(name, "\">\n                    <h5>").concat(name.charAt(0).toUpperCase() + name.slice(2), "</h5>\n                </div>");
             document.getElementsByClassName('content-cards')[numType].innerHTML += pokecard;
         });
     }
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 card(numType, url);
             }
             var typeName = poketype['name'];
-            document.getElementsByClassName('title')[numType].textContent = typeName.charAt(0).toUpperCase() + typeName.slice();
+            document.getElementsByClassName('title')[numType].textContent = typeName.charAt(0).toUpperCase() + typeName.slice(2);
         });
     }
     for (var i = 0; i < 6; i++) {
