@@ -7,7 +7,7 @@ An application that simulates a POKEDEX according to `www.pokeapi.co` data, show
 
 ## Clone the repository
 ```bash
-git clone https://github.com/Angel-Gabriel-Chavez/POKEDEX.git
+git clone https://github.com/angcoder-c/POKEDEX.git
 ```
 ## Run 🏁
 Open Html file `index.html` in the browser
